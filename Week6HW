@@ -1,0 +1,52 @@
+
+import javax.swing.JOptionPane;
+
+public class Week6HW
+{
+public static void main ( String[] args)
+	{
+	int player1;
+	int player2;
+	String userInputUpperCase ="";
+	
+	
+	do 
+	{
+	
+		String playerinput1 = 
+				JOptionPane.showInputDialog( "Player 1: Choose 1.Paper, 2.Scissor, or 3.Rock: ");
+		player1 = Integer.parseInt(playerinput1);
+	
+		String playerinput2 = 
+				JOptionPane.showInputDialog( "Player 2: Choose 1.Paper, 2.Scissor, or 3.Rock: ");
+		player2 = Integer.parseInt(playerinput2);
+		
+	if (player1 == player2)
+		JOptionPane.showMessageDialog(null, "It is a tie!");
+	
+	if (player1 == 3 && player2 == 2)
+		JOptionPane.showMessageDialog(null, "Player 1 win!");
+	
+	if (player1 == 2 && player2 == 1)
+		JOptionPane.showMessageDialog(null, "Player 1 win!");
+	
+	if (player1 == 1 && player2 == 3)
+		JOptionPane.showMessageDialog(null, "Player 1 win!");
+	
+	if (player1 == 3 && player2 == 1)
+		JOptionPane.showMessageDialog(null, "Player 2 win!");
+	
+	if (player1 == 1 && player2 == 2)
+		JOptionPane.showMessageDialog(null, "Player 2 win!");
+	
+	if (player1 == 2 && player2 == 3)
+		JOptionPane.showMessageDialog(null, "Player 2 win!");
+	
+	String playeranswer =JOptionPane.showInputDialog( "Do you want to play again? ");
+	userInputUpperCase = playeranswer.toUpperCase();
+	}
+	while ((userInputUpperCase.equals("YES")));
+	JOptionPane.showMessageDialog(null, "Good Bye!");	
+	
+	}
+}
