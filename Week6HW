@@ -50,3 +50,5 @@ public static void main ( String[] args)
 	
 	}
 }
+
+// Good job, but try having user enter  R/P/S or Rock/Paper/Scissors
